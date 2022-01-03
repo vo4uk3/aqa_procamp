@@ -18,7 +18,7 @@ class ConfigFromEnvProvider(BaseConfig):
 
 class ConfigFromDict(BaseConfig):
 
-    def __init__(self, **kwargs):
+    def __init__(self, kwargs):
         if not kwargs:
             super().__init__(**DEFAULT_CONFIG)
         super().__init__(**kwargs)
